@@ -17,5 +17,10 @@ namespace BeeOpen
         {
             InitializeComponent();
         }
+
+        private void Login_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

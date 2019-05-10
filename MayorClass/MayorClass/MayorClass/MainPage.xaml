@@ -1,7 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MayorClass" x:Class="MayorClass.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label TextColor="Red" HorizontalOptions="Center" x:Name="error"></Label>
+            <Entry x:Name="username" Placeholder="Username"></Entry>
+            <Entry x:Name="password" IsPassword="True" Placeholder="Password"></Entry>
+            <Button x:Name="LogIn" Text="Login" VerticalOptions="End" HorizontalOptions="Center" Clicked="LogIn_OnClicked" />
+            <Button x:Name="regtister" Text="Register" VerticalOptions="End" HorizontalOptions="Center" Clicked="Regtister_OnClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

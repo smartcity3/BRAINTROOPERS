@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Acr.UserDialogs;
 using Xamarin.Forms;
 
 namespace MayorClass
@@ -17,5 +18,29 @@ namespace MayorClass
         {
             InitializeComponent();
         }
+
+        private async void LogIn_OnClicked(object sender, EventArgs e)
+        {
+
+
+            if (username.Text.Equals("Nikos") && password.Text.Equals("123"))
+            {
+               
+                await Navigation.PushAsync(new Page(), true);
+            }
+
+            else
+            {
+                error.Text = "Wrong password or username!";
+            }
+        }
+
+        private void Regtister_OnClicked(object sender, EventArgs e)
+        {
+            
+            Navigation.PushAsync(new Reg(), true);
+
+        }
+
     }
 }

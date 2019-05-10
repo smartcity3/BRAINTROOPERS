@@ -1,42 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:FormsGallery" x:Class="MayorClass.Page">
-   
-    
-    <TabbedPage.ItemTemplate>
-        <DataTemplate>
-            <ContentPage Title="{Binding Name}">
-                <ContentPage.Resources>
-                    <ResourceDictionary>
-                        <Style TargetType="Label">
-                            <Setter Property="FontSize" Value="Large" />
-                            <Setter Property="HorizontalTextAlignment" Value="End" />
-                        </Style>
-                    </ResourceDictionary>
-                </ContentPage.Resources>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:;assembly=MayorClass" x:Class="MayorClass.Page">
+    <ContentPage.Padding>
 
-                <StackLayout>
-                    <StackLayout HorizontalOptions="Center"
-                                 VerticalOptions="CenterAndExpand">
+        <OnPlatform x:TypeArguments="Thickness">
 
-                        <Label Text="{Binding Color.R, StringFormat='R = {0:F2}'}" />
-                        <Label Text="{Binding Color.G, StringFormat='G = {0:F2}'}" />
-                        <Label Text="{Binding Color.B, StringFormat='B = {0:F2}'}" />
-                    </StackLayout>
+            <On Platform="iOS" Value="10, 20, 10, 0" />
 
-                    <BoxView Color="{Binding Color}"
-                         WidthRequest="100"
-                         HeightRequest="100"
-                         HorizontalOptions="Center" />
+            <On Platform="Android, UWP" Value="10, 0" />
 
-                    <StackLayout HorizontalOptions="Center"
-                                 VerticalOptions="CenterAndExpand">
+        </OnPlatform>
 
-                        <Label Text="{Binding Color.Hue, StringFormat='Hue = {0:F2}'}" />
-                        <Label Text="{Binding Color.Saturation, StringFormat='Saturation = {0:F2}'}" />
-                        <Label Text="{Binding Color.Luminosity, StringFormat='Luminosity = {0:F2}'}" />
-                    </StackLayout>
-                </StackLayout>
-            </ContentPage>
-        </DataTemplate>
-    </TabbedPage.ItemTemplate>
-</TabbedPage>
+    </ContentPage.Padding>
+
+
+
+    <ListView SeparatorVisibility="None" ItemsSource="{x:Static local:NamedColor.All}">
+
+        <ListView.RowHeight>
+
+            <OnPlatform x:TypeArguments="x:Int32">
+
+                <On Platform="iOS, Android" Value="80" />
+
+                <On Platform="UWP" Value="90" />
+
+            </OnPlatform>
+        </ListView.RowHeight>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ContentView Padding="5">
+                        <Frame OutlineColor="Accent"
+                               Padding="10">
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView Color="{Binding Color}"
+                                         WidthRequest="0"
+                                         HeightRequest="90" />
+
+                                <Grid VerticalOptions="CenterAndExpand">
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="15"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Grid.Row="0" Text="Τροποποίηση δρομολογίων αστικών" WidthRequest="215" FontSize="22" VerticalOptions="StartAndExpand" />
+                                    <ImageButton Grid.Column="2" Source="like.png" BackgroundColor="Green" Margin="5" HorizontalOptions="Center" />
+                                    <ImageButton Grid.Column="3"   Source="dislike.png" BackgroundColor="Red" Margin="5" HorizontalOptions="Center" />
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+                    </ContentView>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

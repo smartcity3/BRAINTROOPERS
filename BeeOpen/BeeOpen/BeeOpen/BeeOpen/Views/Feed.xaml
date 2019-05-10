@@ -47,14 +47,15 @@
 
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                        <ColumnDefinition Width="15"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
                                         <ColumnDefinition Width="Auto"></ColumnDefinition>
                                         <ColumnDefinition Width="Auto"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
 
-                                    <Label Grid.Column="0" Grid.Row="0" Text="Τροποποίηση δρομολογίων αστικών"WidthRequest="215" FontSize="22" VerticalOptions="StartAndExpand" />
+                                    <Label Grid.Column="0" Grid.Row="0" Text="Τροποποίηση δρομολογίων αστικών" WidthRequest="175" FontSize="22" VerticalOptions="StartAndExpand" />
+                                    <ImageButton Grid.Column="1"   Source="more.png" BackgroundColor="Transparent" Margin="5" HorizontalOptions="Center" />
                                     <ImageButton Grid.Column="2" Source="like.png" BackgroundColor="Green" Margin="5" HorizontalOptions="Center" />
-                                    <ImageButton Grid.Column="3"   Source="dislike.png" BackgroundColor="Red" Margin="5" HorizontalOptions="Center" />
+                                    <ImageButton Grid.Column="3"   Source="dislike.png" BackgroundColor="Red" Margin="5" HorizontalOptions="Center" Clicked="ImageButton_OnClicked" />
                                 </Grid>
                             </StackLayout>
                         </Frame>

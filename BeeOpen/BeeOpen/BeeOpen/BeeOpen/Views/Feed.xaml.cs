@@ -22,6 +22,10 @@ namespace BeeOpen.Views
             
             
         }
-       
+
+        private void ImageButton_OnClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new Detail (), true);
+        }
     }
 }

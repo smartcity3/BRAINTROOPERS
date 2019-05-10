@@ -17,6 +17,7 @@ namespace BeeOpen
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private void Login_Clicked(object sender, EventArgs e)

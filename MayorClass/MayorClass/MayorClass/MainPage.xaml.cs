@@ -26,7 +26,7 @@ namespace MayorClass
             if (username.Text.Equals("Nikos") && password.Text.Equals("123"))
             {
                
-                await Navigation.PushAsync(new Page(), true);
+                await Navigation.PushAsync(new DashboardTabbed(), true);
             }
 
             else

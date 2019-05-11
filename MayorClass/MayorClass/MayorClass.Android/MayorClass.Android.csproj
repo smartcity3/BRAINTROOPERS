@@ -88,6 +88,12 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\logoapp.png" />
+    <AndroidResource Include="Resources\drawable\logowhite.png" />
+    <AndroidResource Include="Resources\drawable\dislike.png" />
+    <AndroidResource Include="Resources\drawable\like.png" />
+    <AndroidResource Include="Resources\drawable\more.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

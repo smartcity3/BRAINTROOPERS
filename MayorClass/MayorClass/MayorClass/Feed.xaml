@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:;assembly=MayorClass"
+             x:Class="MayorClass.Feed"
+             Title="Ανακοινώσεις">
+    <ContentPage.Padding>
+
+        <OnPlatform x:TypeArguments="Thickness">
+
+            <On Platform="iOS" Value="10, 20, 10, 0" />
+
+            <On Platform="Android, UWP" Value="10, 0" />
+
+        </OnPlatform>
+
+    </ContentPage.Padding>
+
+
+
+    <ListView SeparatorVisibility="None"
+
+              ItemsSource="{x:Static local:NamedColor.All}">
+
+        <ListView.RowHeight>
+
+            <OnPlatform x:TypeArguments="x:Int32">
+
+                <On Platform="iOS, Android" Value="80" />
+
+                <On Platform="UWP" Value="90" />
+
+            </OnPlatform>
+        </ListView.RowHeight>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ContentView Padding="5">
+                        <Frame OutlineColor="Accent"
+                               Padding="10">
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView Color="{Binding Color}" WidthRequest="0" HeightRequest="90" />
+
+                                <Grid VerticalOptions="CenterAndExpand">
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Grid.Row="0" Text="Τροποποίηση δρομολογίων αστικών" WidthRequest="140" FontSize="22" VerticalOptions="StartAndExpand" />
+                                    
+                                    
+                                </Grid>
+                                
+                            </StackLayout>
+                        </Frame>
+                    </ContentView>
+                    
+                    
+                    
+                </ViewCell>
+                
+            </DataTemplate>
+            
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage> 

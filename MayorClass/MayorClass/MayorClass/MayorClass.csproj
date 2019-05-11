@@ -17,10 +17,5 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Register.cs" />
-    <Compile Remove="Feed.xaml.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Remove="Feed.xaml" />
-    <EmbeddedResource Remove="Feed.xaml" />
   </ItemGroup>
 </Project>

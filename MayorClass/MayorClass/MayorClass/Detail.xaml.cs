@@ -7,17 +7,11 @@ using Xamarin.Forms.Xaml;
 namespace MayorClass
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Feed : ContentPage
+    public partial class Detail : ContentPage
     {
-        public Feed()
+        public Detail()
         {
             InitializeComponent();
         }
-
-        private void ImageButton_OnClicked(object sender, EventArgs e)
-        {
-            this.Navigation.PushAsync(new Detail(), true);
-        }
-
     }
 }

@@ -7,7 +7,11 @@
     <ContentPage.Content>
         <ScrollView>
             <Grid>
-                <StackLayout Padding="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" Padding="30">
                     <Label Text="Τροποποίηση δρομολογίων αστικών" FontSize="36"></Label>
                     <Label Text="Το Lorem Ipsum είναι απλά ένα κείμενο χωρίς νόημα για τους επαγγελματίες της τυπογραφίας και στοιχειοθεσίας. Το Lorem Ipsum είναι το επαγγελματικό πρότυπο όσον αφορά το κείμενο χωρίς νόημα, από τον 15ο αιώνα, όταν ένας ανώνυμος τυπογράφος πήρε ένα δοκίμιο και ανακάτεψε τις λέξεις για να δημιουργήσει ένα δείγμα βιβλίου. Όχι μόνο επιβίωσε πέντε αιώνες, αλλά κυριάρχησε στην ηλεκτρονική στοιχειοθεσία, παραμένοντας με κάθε τρόπο αναλλοίωτο. Έγινε δημοφιλές τη δεκαετία του '60 με την έκδοση των δειγμάτων της Letraset όπου περιελάμβαναν αποσπάσματα του Lorem Ipsum, και πιο πρόσφατα με το λογισμικό ηλεκτρονικής σελιδοποίησης όπως το Aldus PageMaker που περιείχαν εκδοχές του Lorem Ipsum." LineBreakMode="WordWrap"></Label>
                     <Grid>
@@ -17,11 +21,33 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Button Text="ΥΠΕΡ" BackgroundColor="Green" TextColor="#fbfcff" Grid.Column="0"></Button>
-                        <Button Text="Μεταφορά Ψήφου" FontSize="8" Grid.Column="1" BackgroundColor="#1c6e8c"  TextColor="#fbfcff"></Button>
+                        <Button Text="Μεταφορά Ψήφου" x:Name="liquid" FontSize="10" Grid.Column="1" BackgroundColor="#1c6e8c" TextColor="#fbfcff" Clicked="Liquid_OnClicked"></Button>
                         <Button Text="ΚΑΤΑ" Grid.Column="2" BackgroundColor="Red"  TextColor="#fbfcff"></Button>
-                        
                     </Grid>
                 </StackLayout>
+                
+                    <StackLayout Grid.Row="1" Padding="1"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                    <StackLayout Padding="1"   BackgroundColor="#d0ccd0" HorizontalOptions="FillAndExpand" >
+                            <Label Text="Χρήστος Χρήστου" FontSize="15" TextColor="#274156" HorizontalTextAlignment="Start"/>
+                            <Label Text="Πιστεύω είναι μια καλή ιδέα"  HorizontalTextAlignment="Start"/>
+                        </StackLayout>
+                    <StackLayout Padding="1" BackgroundColor="#d0ccd0" HorizontalOptions="FillAndExpand" >
+                            <Label Text="Θάνος Καψάλης" FontSize="15" TextColor="#274156" HorizontalTextAlignment="Start"/>
+                            <Label Text="Είμαι ένας άλλος"  HorizontalTextAlignment="Start"/>
+                        </StackLayout>
+                    <StackLayout Padding="1" BackgroundColor="#d0ccd0" HorizontalOptions="FillAndExpand" >
+                            <Label Text="Θάνος Καψάλης" FontSize="15" TextColor="#274156" HorizontalTextAlignment="Start"/>
+                            <Label Text="Το σημείο Α Παρ 3 Δεν έχει ορισθεί σωστά"  HorizontalTextAlignment="Start"/>
+                        </StackLayout>
+                    <StackLayout Padding="1" BackgroundColor="#d0ccd0" HorizontalOptions="FillAndExpand" >
+                            <Label Text="user" FontSize="15" TextColor="#274156" HorizontalTextAlignment="Start"/>
+                            <Editor Placeholder="Σχόλιο"  HeightRequest="140"/>
+                        <Button Text="ΣΧΟΛΙΑΣΕ"  BackgroundColor="#274156" TextColor="#fbfcff" ></Button>
+                     </StackLayout>
+
+                </StackLayout>
+                
 
 
             </Grid>

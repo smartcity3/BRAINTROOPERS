@@ -1,4 +1,5 @@
 ﻿using System;
+using Acr.UserDialogs;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +16,7 @@ namespace BeeOpen
                 BarBackgroundColor=Color.FromHex("#274156"),
                 BarTextColor=Color.White,
             };
+            
         }
 
         protected override void OnStart()

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Acr.UserDialogs;
 using BeeOpen.Views;
 using Xamarin.Forms;
 
@@ -20,12 +21,14 @@ namespace BeeOpen
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void Login_Clicked(object sender, EventArgs e)
+        private  void Login_Clicked(object sender, EventArgs e)
         {
-            if (username.Text.Equals("user") || password.Text.Equals("pass"))
+            UserDialogs.Instance.ShowLoading();
+            if (username.Text.Equals("user") && password.Text.Equals("pass"))
             {
+                UserDialogs.Instance.HideLoading ();
                 Navigation.PushAsync(new DashboardTabbed(), true);
-                Console.WriteLine("got in");
+               
             }
                 
 

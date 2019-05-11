@@ -5,10 +5,42 @@
              Title="Προφίλ"
              BackgroundColor="#d0ccd0">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Source="profile.png" Grid.Row="0"></Image>
+            <StackLayout Grid.Row="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0">
+                        <Label Text="Όνομα: " FontSize="15" Grid.Column="0"></Label>
+                        <Label Text="Επώνυμο: " FontSize="15" Grid.Column="0"></Label>
+                        <Label Text="E-mail: " FontSize="15" Grid.Column="0"></Label>
+                        <Label Text="ΑΦΜ: " FontSize="15" Grid.Column="0"></Label>
+                        <Label Text="Δήμος: " FontSize="15" Grid.Column="0" ></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1">
+                        <Entry Text="Θάνος" ></Entry>
+
+                        <Entry Text="Καψάλης"></Entry>
+
+                        <Entry Text="thanos kapsalis@email.com"></Entry>
+
+                        <Entry Text="123456789"  ></Entry>
+
+                        <Entry Text="Τρικκαίων" ></Entry>
+
+</StackLayout>
+                    
+                   
+                </Grid>
+            </StackLayout>
+       
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

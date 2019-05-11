@@ -11,7 +11,7 @@
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="30">
             <Image x:Name="Image" Source="logowhite.png"/>
             <Entry x:Name="username" Placeholder="Όνομα Χρήστη" PlaceholderColor="#fbfcff"   TextColor="#fbfcff" />
-            <Entry x:Name="password" Placeholder="Κωδικός Πρόσβασης" PlaceholderColor="#fbfcff" TextColor="#fbfcff"/>
+            <Entry x:Name="password" IsPassword="True" Placeholder="Κωδικός Πρόσβασης" PlaceholderColor="#fbfcff" TextColor="#fbfcff"/>
             <Button x:Name="login" BackgroundColor="#1c6e8c" Text="Σύνδεση" TextColor="#fbfcff"  Clicked="Login_Clicked" />
         </StackLayout>
 

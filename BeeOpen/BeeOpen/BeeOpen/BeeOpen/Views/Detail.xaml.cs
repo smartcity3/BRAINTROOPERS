@@ -25,6 +25,22 @@ namespace BeeOpen.Views
                 OkText = "Εξουσιοδώτηση",
                 Title = "Εισάγετε το όνομα χρήστη του ατόμου που θέλετε να εξουσιοδωτήσετε"
             });
+
+            String id=generateID ();
+            UserDialogs.Instance.Alert("Το ID ψήφου είναι " + id+"\n Η επιβεβαίωση στάλθκε στην δνση Ηλ-ταχυδρομειου");
+        }
+
+        
+
+        public string generateID()
+        {
+            return Guid.NewGuid().ToString("N");
+        }
+
+        private void Confirm_OnClicked(object sender, EventArgs e)
+        {
+            String id = generateID();
+            UserDialogs.Instance.Alert("Το ID ψήφου είναι " + id + "\n Η επιβεβαίωση στάλθκε στην δνση Ηλ-ταχυδρομειου");
         }
     }
 }

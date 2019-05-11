@@ -20,7 +20,7 @@
                             <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Button Text="ΥΠΕΡ" BackgroundColor="Green" TextColor="#fbfcff" Grid.Column="0"></Button>
+                        <Button Text="ΥΠΕΡ"  x:Name="confirm" BackgroundColor="Green" TextColor="#fbfcff" Grid.Column="0" Clicked="Confirm_OnClicked"></Button>
                         <Button Text="Μεταφορά Ψήφου" x:Name="liquid" FontSize="10" Grid.Column="1" BackgroundColor="#1c6e8c" TextColor="#fbfcff" Clicked="Liquid_OnClicked"></Button>
                         <Button Text="ΚΑΤΑ" Grid.Column="2" BackgroundColor="Red"  TextColor="#fbfcff"></Button>
                     </Grid>

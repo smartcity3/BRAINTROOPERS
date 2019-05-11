@@ -16,6 +16,7 @@ namespace BeeOpen.Views
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+
             this.Children.Add(new Feed());
             this.Children.Add(new Suggestions ());
             this.Children.Add(new Profile ());

@@ -10,7 +10,11 @@ namespace BeeOpen
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage()); 
+            MainPage=new NavigationPage(new MainPage ())
+            {
+                BarBackgroundColor=Color.FromHex("#274156"),
+                BarTextColor=Color.White,
+            };
         }
 
         protected override void OnStart()

@@ -3,19 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BeeOpen"
              x:Class="BeeOpen.MainPage"
-             BackgroundColor="#d0ccd0">
+             BackgroundColor="#274156">
 
     <Grid Padding="20">
     
         <Grid.RowDefinitions></Grid.RowDefinitions>
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="30">
-            <Entry x:Name="username" Placeholder="Όνομα Χρήστη" TextColor="#605856" />
-            <Entry x:Name="password" Placeholder="Κωδικός Πρόσβασης" TextColor="#605856"/>
-            <Button x:Name="login" BackgroundColor="#274156" Text="Σύνδεση" TextColor="#fbfcff"  Clicked="Login_Clicked" />
+            <Image x:Name="Image" Source="logowhite.png"/>
+            <Entry x:Name="username" Placeholder="Όνομα Χρήστη" PlaceholderColor="#fbfcff"   TextColor="#fbfcff" />
+            <Entry x:Name="password" Placeholder="Κωδικός Πρόσβασης" PlaceholderColor="#fbfcff" TextColor="#fbfcff"/>
+            <Button x:Name="login" BackgroundColor="#1c6e8c" Text="Σύνδεση" TextColor="#fbfcff"  Clicked="Login_Clicked" />
         </StackLayout>
 
         <StackLayout VerticalOptions="End" HorizontalOptions="Center">
-            <Button x:Name="Register" Text="Έγγραφή" TextColor="#274156" BackgroundColor="Transparent" BorderColor="Transparent" Clicked="Register_OnClicked"></Button>
+            <Button x:Name="Register" Text="Έγγραφή" TextColor="#fbfcff" BackgroundColor="Transparent" BorderColor="Transparent" Clicked="Register_OnClicked"></Button>
         </StackLayout>
 
     </Grid>

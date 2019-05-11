@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BeeOpen"
              x:Class="BeeOpen.MainPage"
              BackgroundColor="#d0ccd0">
 
-    <Grid>
-
+    <Grid Padding="20">
+    
         <Grid.RowDefinitions></Grid.RowDefinitions>
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="30">
             <Entry x:Name="username" Placeholder="Όνομα Χρήστη" TextColor="#605856" />
@@ -15,7 +15,7 @@
         </StackLayout>
 
         <StackLayout VerticalOptions="End" HorizontalOptions="Center">
-            <Button x:Name="Register" Text="Έγγραφή" BackgroundColor="Transparent" BorderColor="Transparent" Clicked="Register_OnClicked"></Button>
+            <Button x:Name="Register" Text="Έγγραφή" TextColor="#274156" BackgroundColor="Transparent" BorderColor="Transparent" Clicked="Register_OnClicked"></Button>
         </StackLayout>
 
     </Grid>

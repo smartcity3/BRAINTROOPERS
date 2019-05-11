@@ -1,17 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BeeOpen.Views.Register">
+             x:Class="BeeOpen.Views.Register"
+             BackgroundColor="#d0ccd0">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
-            <Label Text="Προσθήκη Νέου Χρήστη"></Label>
-            <Entry x:Name="username" Placeholder="Όνομα Χρήστη"></Entry>
-            <Entry x:Name="password" IsPassword="True" Placeholder="Κωδικός Πρόσβασης"></Entry>
-            <Entry x:Name="repassword" IsPassword="True" Placeholder="Επανάληψη Εισαγωγής"></Entry>
-            <Entry x:Name="email" Placeholder="E-mail"></Entry>
-            <Entry x:Name="afm" Placeholder="ΑΦΜ"></Entry>
-            <Picker x:Name="mun"></Picker>
-            <Button x:Name="register" Text="Εγγραφή" Clicked="Register_OnClicked"></Button>
+        <Grid Padding="20">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Padding="30">
+            <Label Text="Προσθήκη Νέου Χρήστη" HorizontalOptions="Center"></Label>
+            <Entry x:Name="username" Placeholder="Όνομα Χρήστη" TextColor="#605856" ></Entry>
+            <Entry x:Name="password" IsPassword="True" Placeholder="Κωδικός Πρόσβασης" TextColor="#605856" ></Entry>
+            <Entry x:Name="repassword" IsPassword="True" Placeholder="Επανάληψη Εισαγωγής" TextColor="#605856" ></Entry>
+            <Entry x:Name="email" Placeholder="E-mail" TextColor="#605856" ></Entry>
+            <Entry x:Name="afm" Placeholder="ΑΦΜ" TextColor="#605856" ></Entry>
+            <Picker x:Name="mun" TextColor="#605856" ></Picker>
+            <Button x:Name="register" Text="Εγγραφή" BackgroundColor="#274156" TextColor="#fbfcff" Clicked="Register_OnClicked"></Button>
         </StackLayout>
+        </Grid>
+        
+        
     </ContentPage.Content>
 </ContentPage>

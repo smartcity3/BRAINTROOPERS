@@ -16,6 +16,7 @@ namespace BeeOpen.Views
         public Register()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             AddMuniciplaity ();
         }
 

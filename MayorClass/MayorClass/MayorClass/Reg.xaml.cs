@@ -13,7 +13,7 @@ namespace MayorClass
         {
 
             InitializeComponent();
-
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void Register_OnClicked(object sender, EventArgs e)
@@ -23,27 +23,25 @@ namespace MayorClass
 
                 if (name.Text.Equals(null))
                 {
-                    error.Text = "Somethink is empty! Please fill it up and try again!";
+                    DisplayAlert("", "Κάποιο πεδίο ειναι κενό. Συμπληρώστε όλα τα πεδία!", "OK");
                 }
                 else
                 {
                     if (password.Text.Equals(password2.Text))
                     {
-                        error.Text = "";
-                        ok.Text = "Everything is set!";
+                        DisplayAlert("", "Η εγγραφή σας πραγματοποιήθηκε με επιτυχία!!", "OK");
                         await Navigation.PushAsync(new MainPage(), true);
                     }
                     else
                     {
-                        error.Text = "Password mismatch";
+                        DisplayAlert("", "Ο κωδικός δεν τεριάζει!", "OK");
                     }
 
                 }
             }
             catch (Exception exception)
             {
-                Console.WriteLine(exception.ToString());
-                error.Text = "Somethink is empty! Please fill it up and try again!";
+                DisplayAlert("", "Κάποιο πεδίο ειναι κενό. Συμπληρώστε όλα τα πεδία!", "OK");
 
             }
 

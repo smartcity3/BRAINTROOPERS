@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MayorClass" x:Class="MayorClass.MainPage">
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <Label TextColor="Red" HorizontalOptions="Center" x:Name="error"></Label>
-            <Entry x:Name="username" Placeholder="Username"></Entry>
-            <Entry x:Name="password" IsPassword="True" Placeholder="Password"></Entry>
-            <Button x:Name="LogIn" Text="Login" VerticalOptions="End" HorizontalOptions="Center" Clicked="LogIn_OnClicked" />
-            <Button x:Name="regtister" Text="Register" VerticalOptions="End" HorizontalOptions="Center" Clicked="Regtister_OnClicked"></Button>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MayorClass" x:Class="MayorClass.MainPage" BackgroundColor="#1c6e8c">
+    <Grid Padding="20">
+        
+         <Grid.RowDefinitions></Grid.RowDefinitions>
+        
+        <StackLayout VerticalOptions="CenterAndExpand"  HorizontalOptions="FillAndExpand" Padding="30">
+            <Image x:Name="Image" Source="logowhite.png"></Image>
+                
+            
+            <Entry x:Name="username" Placeholder="Όνομα" TextColor="#fbfcff" PlaceholderColor="#fbfcff" ></Entry>
+            <Entry x:Name="password" IsPassword="True" Placeholder="Κωδικός" TextColor="#fbfcff" PlaceholderColor="#fbfcff" ></Entry>
+            <Button x:Name="LogIn" Text="Σύνδεση" VerticalOptions="End" HorizontalOptions="Center" Clicked="LogIn_OnClicked" BackgroundColor="#274156" TextColor="#fbfcff"/>
         </StackLayout>
-    </ContentPage.Content>
+        
+        <StackLayout VerticalOptions="End" HorizontalOptions="Center">
+            <Button x:Name="regtister" Text="Έγγραφή" TextColor="#fbfcff" BackgroundColor="Transparent" BorderColor="Transparent" Clicked="Regtister_OnClicked"></Button>
+        </StackLayout>
+        
+    </Grid>
 </ContentPage>

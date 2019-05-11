@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MayorClass.Suggestions" Title="Δημοσίευση" >
-    <ContentPage.Content>
-        <StackLayout>
-            <Entry x:Name="Title" Placeholder="Τίτλος δημοσίευσης"></Entry>
-            <Editor x:Name="ToPublish" Placeholder="Διμιουργία Δημοσίευσης"  HeightRequest="150" ></Editor>
-            
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MayorClass.Suggestions" Title="Δημοσίευση" BackgroundColor="#d0ccd0" >
+    <Grid Padding="20">
+        <Grid.RowDefinitions></Grid.RowDefinitions>
+        <StackLayout VerticalOptions="CenterAndExpand"  HorizontalOptions="FillAndExpand" Padding="30">
+            <Entry x:Name="Title" Placeholder="Τίτλος δημοσίευσης" TextColor="#605856" PlaceholderColor="#605856" ></Entry>
+            <Editor x:Name="ToPublish" Placeholder="Διμιουργία Δημοσίευσης"  HeightRequest="150" TextColor="#605856" PlaceholderColor="#605856" ></Editor>
+            <Button x:Name="Submit" Text="Καταχώριση" VerticalOptions="End" Clicked="Submit_OnClicked" BackgroundColor="#1c6e8c" TextColor="#fbfcff" />
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>

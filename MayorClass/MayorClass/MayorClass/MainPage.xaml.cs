@@ -17,6 +17,7 @@ namespace MayorClass
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void LogIn_OnClicked(object sender, EventArgs e)
@@ -31,7 +32,7 @@ namespace MayorClass
 
             else
             {
-                error.Text = "Wrong password or username!";
+                DisplayAlert("","Λάθος κωδικός ή όνομα!!", "OK");
             }
         }
 

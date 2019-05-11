@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MayorClass.Reg">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MayorClass.Reg" BackgroundColor="#1c6e8c">
     <ContentPage.Content>
-        
-        <StackLayout  VerticalOptions="StartAndExpand">
-            <Label TextColor="Red" HorizontalOptions="Center" x:Name="error"></Label>
-            <Label TextColor="Black" HorizontalOptions="Center" x:Name="ok"></Label>
-            <Entry Placeholder="Name" x:Name="name"></Entry>
-            <Entry Placeholder="Surname" x:Name="surname"></Entry>
-            <Entry Placeholder="Email" x:Name="email"></Entry>
-            <Entry Placeholder="Afm" x:Name="afm"></Entry>
-           <Entry Placeholder="Password" x:Name="password" IsPassword="True"></Entry>
-           <Entry Placeholder="Password confirm" x:Name="password2" IsPassword="True"></Entry>
-            <Button VerticalOptions="End" x:Name="register" Text="Register" Clicked="Register_OnClicked"></Button>
+        <ScrollView>
+       
+        <StackLayout VerticalOptions="CenterAndExpand"  HorizontalOptions="FillAndExpand" Padding="30">
+             <Image x:Name="Image" Source="logowhite.png"></Image>   
+            <Entry Placeholder="Όνομα" x:Name="name" PlaceholderColor="#fbfcff" TextColor="#fbfcff"></Entry>
+            <Entry Placeholder="Επώνυμο" x:Name="surname" PlaceholderColor="#fbfcff" TextColor="#fbfcff"></Entry>
+            <Entry Placeholder="Email" x:Name="email" PlaceholderColor="#fbfcff" TextColor="#fbfcff"></Entry>
+            <Entry Placeholder="ΑΦΜ" x:Name="afm" PlaceholderColor="#fbfcff" TextColor="#fbfcff"></Entry>
+           <Entry Placeholder="Κωδικός" x:Name="password" IsPassword="True" PlaceholderColor="#fbfcff" TextColor="#fbfcff"></Entry>
+           <Entry Placeholder="Επιβαιβέωση Κωδικού" x:Name="password2" IsPassword="True" PlaceholderColor="#fbfcff" TextColor="#fbfcff"></Entry>
+            <Button VerticalOptions="End" x:Name="register" Text="Εγγραφή" Clicked="Register_OnClicked" BackgroundColor="#fbfcff" TextColor="#1c6e8c"></Button>
         </StackLayout>
         
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

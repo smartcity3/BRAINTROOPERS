@@ -94,6 +94,7 @@
     <AndroidResource Include="Resources\drawable\dislike.png" />
     <AndroidResource Include="Resources\drawable\like.png" />
     <AndroidResource Include="Resources\drawable\more.png" />
+    <AndroidResource Include="Resources\drawable\profile.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

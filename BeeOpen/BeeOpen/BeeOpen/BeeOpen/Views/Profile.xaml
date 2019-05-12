@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeeOpen.Views.Profile"
+             Title="Προφίλ"
+             BackgroundColor="#d0ccd0">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Source="profile.png" Grid.Row="0"></Image>
+            <StackLayout Grid.Row="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0">
+                        <Label Text="Όνομα: " FontSize="15" Grid.Column="0"></Label>
+                        <Label Text="Επώνυμο: " FontSize="15" Grid.Column="0"></Label>
+                        <Label Text="E-mail: " FontSize="15" Grid.Column="0"></Label>
+                        <Label Text="ΑΦΜ: " FontSize="15" Grid.Column="0"></Label>
+                        <Label Text="Δήμος: " FontSize="15" Grid.Column="0" ></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1">
+                        <Label Text="Brain" ></Label>
+
+                        <Label Text="Trooper"></Label>
+
+                        <Label Text="braintroopers@email.com"></Label>
+
+                        <Label Text="123456789"  ></Label>
+
+                        <Label Text="Σάμος" ></Label>
+
+</StackLayout>
+                    
+                   
+                </Grid>
+            </StackLayout>
+       
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

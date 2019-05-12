@@ -3,12 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BeeOpen.Views.Suggestions"
              Title="DashBoard"
-             BackgroundColor="#274156">
+             BackgroundColor="#d0ccd0">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ScrollView>
+        <StackLayout Padding="30">
+            <Label Text="Προτάσεις αρεσκείας δημοσιεύσεων συνδιασμών."></Label>
+            <Image Source="a4.png" /> 
+            <Label Text="Συμμετοχή ανδρών/γυναικών στα κοινά"></Label>
+             <Image Source="a3.png" /> 
+            <Label Text="Δημοφιλή θέματα στα φύλα"></Label>
+             <Image Source="a2.png" /> 
+            <Label Text="Συμμετοχή ηλικιών"></Label>
+             <Image Source="a1.png" /> 
+            
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
+        </ContentPage.Content>
 </ContentPage>

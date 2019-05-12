@@ -91,6 +91,10 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\a1.png" />
+    <AndroidResource Include="Resources\drawable\a2.png" />
+    <AndroidResource Include="Resources\drawable\a3.png" />
+    <AndroidResource Include="Resources\drawable\a4.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
@@ -100,7 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BeeOpen\BeeOpen.csproj">
-      <Project>{CF8C5FC9-9A5D-469C-98E0-C55B9052CC8C}</Project>
+      <Project>{B4F6DAF7-F6A5-4DC2-A5FD-2C7AF0810638}</Project>
       <Name>BeeOpen</Name>
     </ProjectReference>
   </ItemGroup>

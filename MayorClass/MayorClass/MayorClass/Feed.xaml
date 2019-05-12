@@ -8,7 +8,7 @@
     <StackLayout Padding="30">
     
        
-        <Button x:Name="Open"  Text="Συγκαλεση γενικου σημβουλιου" Clicked="Open_OnClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#1c6e8c" TextColor="#fbfcff" />
+        <Button x:Name="Open"  Text="Τροποποίηση δρομολογίων αστικών" BorderWidth="0" Clicked="Open_OnClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#fbfcff" TextColor="#605856" />
 
     </StackLayout>
 

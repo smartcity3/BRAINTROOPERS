@@ -21,15 +21,15 @@
                         <Label Text="Δήμος: " FontSize="15" Grid.Column="0" ></Label>
                     </StackLayout>
                     <StackLayout Grid.Column="1">
-                        <Label Text="Θάνος" ></Label>
+                        <Label Text="Brain" ></Label>
 
-                        <Label Text="Καψάλης"></Label>
+                        <Label Text="Trooper"></Label>
 
-                        <Label Text="thanos kapsalis@email.com"></Label>
+                        <Label Text="braintrooper@email.com"></Label>
 
                         <Label Text="123456789"  ></Label>
 
-                        <Label Text="Τρικκαίων" ></Label>
+                        <Label Text="Σάμου" ></Label>
 
 </StackLayout>
                     

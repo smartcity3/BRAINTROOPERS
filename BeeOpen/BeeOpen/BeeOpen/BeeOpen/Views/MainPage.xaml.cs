@@ -24,7 +24,7 @@ namespace BeeOpen
         private  void Login_Clicked(object sender, EventArgs e)
         {
             UserDialogs.Instance.ShowLoading();
-            if (username.Text.Equals("user") && password.Text.Equals("pass"))
+            if (username.Text.Equals("BrainTrooper") && password.Text.Equals("123"))
             {
                 UserDialogs.Instance.HideLoading ();
                 Navigation.PushAsync(new DashboardTabbed(), true);

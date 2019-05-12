@@ -1,67 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:;assembly=BeeOpen"
              x:Class="BeeOpen.Views.Feed"
              Title="Ανακοινώσεις"
              BackgroundColor="#d0ccd0">
-    <ContentPage.Padding>
+    <StackLayout Padding="30">
+    
+       
+        <Button x:Name="Open"  Text="Τροποποίηση δρομολογίων αστικών" BorderWidth="0" Clicked="Open_OnClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#fbfcff" TextColor="#605856" />
 
-        <OnPlatform x:TypeArguments="Thickness">
+    </StackLayout>
 
-            <On Platform="iOS" Value="10, 20, 10, 0" />
-
-            <On Platform="Android, UWP" Value="10, 0" />
-
-        </OnPlatform>
-
-    </ContentPage.Padding>
-
-
-
-    <ListView SeparatorVisibility="None"
-
-              ItemsSource="{x:Static local:NamedColor.All}">
-
-        <ListView.RowHeight>
-
-            <OnPlatform x:TypeArguments="x:Int32">
-
-                <On Platform="iOS, Android" Value="80" />
-
-                <On Platform="UWP" Value="90" />
-
-            </OnPlatform>
-        </ListView.RowHeight>
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <ContentView Padding="5">
-                        <Frame OutlineColor="Accent"
-                               Padding="10">
-                            <StackLayout Orientation="Horizontal">
-                                <BoxView Color="{Binding Color}"
-                                         WidthRequest="0"
-                                         HeightRequest="90" />
-
-                                <Grid VerticalOptions="CenterAndExpand">
-
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                    </Grid.ColumnDefinitions>
-
-                                    <Label Grid.Column="0" Grid.Row="0" Text="Τροποποίηση δρομολογίων αστικών" WidthRequest="175" FontSize="22" VerticalOptions="StartAndExpand" />
-                                    <ImageButton Grid.Column="1"   Source="more.png" BackgroundColor="Transparent"  BorderWidth="1" Margin="5" HorizontalOptions="Center" Clicked="ImageButton_OnClicked" />
-                                    
-                                </Grid>
-                            </StackLayout>
-                        </Frame>
-                    </ContentView>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
 </ContentPage> 

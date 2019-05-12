@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BeeOpen.Views.Profile"
@@ -25,15 +25,15 @@
                         <Label Text="Δήμος: " FontSize="15" Grid.Column="0" ></Label>
                     </StackLayout>
                     <StackLayout Grid.Column="1">
-                        <Entry Text="Θάνος" ></Entry>
+                        <Label Text="Brain" ></Label>
 
-                        <Entry Text="Καψάλης"></Entry>
+                        <Label Text="Trooper"></Label>
 
-                        <Entry Text="thanos kapsalis@email.com"></Entry>
+                        <Label Text="braintroopers@email.com"></Label>
 
-                        <Entry Text="123456789"  ></Entry>
+                        <Label Text="123456789"  ></Label>
 
-                        <Entry Text="Τρικκαίων" ></Entry>
+                        <Label Text="Σάμος" ></Label>
 
 </StackLayout>
                     

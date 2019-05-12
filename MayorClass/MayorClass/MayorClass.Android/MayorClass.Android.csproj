@@ -95,6 +95,10 @@
     <AndroidResource Include="Resources\drawable\like.png" />
     <AndroidResource Include="Resources\drawable\more.png" />
     <AndroidResource Include="Resources\drawable\profile.png" />
+    <AndroidResource Include="Resources\drawable\a1.png" />
+    <AndroidResource Include="Resources\drawable\a2.png" />
+    <AndroidResource Include="Resources\drawable\a3.png" />
+    <AndroidResource Include="Resources\drawable\a4.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

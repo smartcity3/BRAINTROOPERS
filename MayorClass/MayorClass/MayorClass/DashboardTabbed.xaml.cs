@@ -16,6 +16,7 @@ namespace MayorClass
             this.Children.Add(new Feed());
             this.Children.Add(new Suggestions());
             this.Children.Add(new Profile());
+            this.Children.Add(new Dash());
         }
     }
 }
